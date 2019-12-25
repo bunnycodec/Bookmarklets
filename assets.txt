@@ -1,0 +1,16 @@
+$$ Asset #1
+==================
+(function() {
+    let script = document.createElement('script');
+    script.src = "bookmarklet.js";
+    document.body.appendChild(script);
+})();
+
+$$ Asset #2
+==================
+(function() {let script = document.createElement('script');script.src = "bookmarklet.js";document.body.appendChild(script);})()
+
+$$ Asset #3
+==================
+var url = 'https://localhost:8000/bookmarklet.js';
+script.src = url + "?" + new Date().getTime();
